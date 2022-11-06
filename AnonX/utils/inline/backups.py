@@ -7,22 +7,22 @@ from telegram import Message, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-# from FallenRobot.modules.sql import warns_sql as warnssql
-import FallenRobot.modules.sql.blacklist_sql as blacklistsql
+# from AxonX.modules.sql import warns_sql as warnssql
+import AxonX.modules.sql.blacklist_sql as blacklistsql
 
-# from FallenRobot.modules.sql import cust_filters_sql as filtersql
-# import FallenRobot.modules.sql.welcome_sql as welcsql
-import FallenRobot.modules.sql.locks_sql as locksql
-import FallenRobot.modules.sql.notes_sql as sql
+# from AxonX.modules.sql import cust_filters_sql as filtersql
+# import AxonX.modules.sql.welcome_sql as welcsql
+import AxonX.modules.sql.locks_sql as locksql
+import AxonX.modules.sql.notes_sql as sql
 
-# from FallenRobot.modules.rules import get_rules
-import FallenRobot.modules.sql.rules_sql as rulessql
-from FallenRobot import JOIN_LOGGER, LOGGER, OWNER_ID, SUPPORT_CHAT, dispatcher
-from FallenRobot.__main__ import DATA_IMPORT
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.helper_funcs.alternate import typing_action
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.sql import disable_sql as disabledsql
+# from AxonX.modules.rules import get_rules
+import AxonX.modules.sql.rules_sql as rulessql
+from AxonX import JOIN_LOGGER, LOGGER, OWNER_ID, SUPPORT_CHAT, dispatcher
+from AxonX.__main__ import DATA_IMPORT
+from AxonX.modules.connection import connected
+from AxonX.modules.helper_funcs.alternate import typing_action
+from AxonX.modules.helper_funcs.chat_status import user_admin
+from AxonX.modules.sql import disable_sql as disabledsql
 
 
 @run_async
